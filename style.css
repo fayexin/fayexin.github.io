@@ -245,3 +245,8 @@ footer {
     flex-direction: column;
   }
 }
+  .paper-meta {
+    color: var(--text);
+    font-weight: 700;
+    margin-top: 10px;
+  }
