@@ -204,7 +204,7 @@ p {
   gap: 16px;
 }
 
-/* Dashboard and paper feature cards */
+/* Feature cards */
 
 .feature-card {
   margin-bottom: 16px;
@@ -222,15 +222,21 @@ p {
   gap: 22px;
 }
 
+.paper-card {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
 .feature-content {
   min-width: 0;
 }
 
+/* Dashboard thumbnails */
+
 .dashboard-thumb {
   display: block;
-  width: 230px;
-  max-width: 230px;
-  height: 142px;
+  width: 230px !important;
+  max-width: 230px !important;
+  height: 142px !important;
   object-fit: cover;
   border-radius: 14px;
   border: 1px solid var(--border);
@@ -238,6 +244,8 @@ p {
   box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
   flex-shrink: 0;
 }
+
+/* Labels */
 
 .tag {
   margin: 0 0 8px;
@@ -290,20 +298,24 @@ footer {
   color: var(--muted);
 }
 
-/* Mobile */
+/* Medium screens */
 
 @media (max-width: 860px) {
   .feature-card,
-  .dashboard-card {
+  .dashboard-card,
+  .paper-card {
     grid-template-columns: 1fr;
     align-items: flex-start;
   }
 
   .dashboard-thumb {
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
   }
 }
+
+/* Small screens */
 
 @media (max-width: 760px) {
   .site-header {
@@ -331,18 +343,5 @@ footer {
 
   .card-grid {
     grid-template-columns: 1fr;
-  }
-
-  .feature-card,
-  .dashboard-card {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .dashboard-thumb {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
   }
 }
