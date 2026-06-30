@@ -216,7 +216,10 @@ p {
 }
 
 .dashboard-card {
+  display: grid;
   grid-template-columns: 230px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 22px;
 }
 
 .feature-content {
@@ -224,13 +227,16 @@ p {
 }
 
 .dashboard-thumb {
+  display: block;
   width: 230px;
+  max-width: 230px;
   height: 142px;
   object-fit: cover;
   border-radius: 14px;
   border: 1px solid var(--border);
   background: #ffffff;
   box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+  flex-shrink: 0;
 }
 
 .tag {
@@ -325,5 +331,18 @@ footer {
 
   .card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .feature-card,
+  .dashboard-card {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dashboard-thumb {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 }
