@@ -1,81 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Faye Xin | Research Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faye Xin</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <header class="site-header">
+    <a class="site-name" href="#">Faye Xin</a>
+
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
   <main>
     <section class="hero">
-      <h1>Faye Xin</h1>
+      <p class="eyebrow">Data science · Geospatial AI · Climate and agriculture</p>
 
-      <p>
-        Data scientist focused on deep learning, climate data, geospatial analysis,
-        and county-level crop yield prediction.
+      <h1>Hi, I am Faye.</h1>
+
+      <p class="hero-text">
+        I work on machine learning for environmental and agricultural problems,
+        especially county-level crop yield prediction, climate data, and spatial analysis.
       </p>
 
-      <a class="button" href="#research">
-        View Research
-      </a>
+      <div class="hero-actions">
+        <a class="button primary" href="https://corn-yield-dashboard.streamlit.app" target="_blank">
+          View yield dashboard
+        </a>
+
+        <a class="button secondary" href="https://github.com/fayexin" target="_blank">
+          GitHub
+        </a>
+      </div>
     </section>
 
-    <section id="about">
-      <h2>About</h2>
+    <section id="work" class="section">
+      <h2>What I work on</h2>
 
-      <p>
-        I work on machine learning, climate data analysis, and geospatial modeling.
-        My research focuses on county-level corn yield prediction using daily climate,
-        soil, vegetation, and hydrologic variables.
-      </p>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Crop yield prediction</h3>
+          <p>
+            I compare deep learning models for county-level corn yield prediction
+            across the U.S. Corn Belt.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Climate and weather extremes</h3>
+          <p>
+            I study how models respond to heat, drought, wet years, and compound
+            weather conditions.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Geospatial dashboards</h3>
+          <p>
+            I build interactive maps and visual tools that make model outputs easier
+            to inspect and explain.
+          </p>
+        </article>
+      </div>
     </section>
 
-    <section id="research">
-      <h2>Research</h2>
+    <section id="projects" class="section">
+      <h2>Featured work</h2>
 
-      <p>
-        My dissertation project compares LSTM, GRU, and PatchTST models for
-        county-level corn yield prediction across the U.S. Corn Belt. The project also
-        evaluates model sensitivity to heat, drought, wetness, and compound extreme
-        weather events.
-      </p>
+      <article class="feature-card">
+        <div>
+          <p class="tag">Dashboard</p>
+          <h3>County-Level Corn Yield Prediction Dashboard</h3>
+          <p>
+            A Streamlit dashboard for viewing model predictions, observed yield,
+            residuals, absolute error, and percent error across Corn Belt counties.
+          </p>
+        </div>
+
+        <a class="button primary" href="https://corn-yield-dashboard.streamlit.app" target="_blank">
+          Open dashboard
+        </a>
+      </article>
+
+      <article class="feature-card">
+        <div>
+          <p class="tag">Paper</p>
+          <h3>Transformer and RNN models for corn yield prediction</h3>
+          <p>
+            A comparison of PatchTST, LSTM, and GRU models for county-level corn
+            yield prediction and sensitivity to weather extremes.
+          </p>
+        </div>
+
+        <a class="button secondary" href="https://doi.org/10.1016/j.atech.2026.102224" target="_blank">
+          Read paper
+        </a>
+      </article>
     </section>
 
-    <section id="project">
-      <h2>Featured Project</h2>
-
-      <h3>County-Level Corn Yield Prediction Dashboard</h3>
+    <section id="contact" class="section contact">
+      <h2>Connect</h2>
 
       <p>
-        This dashboard will show county-level maps, predicted versus observed yield,
-        model error, and extreme weather sensitivity results.
+        The easiest way to reach me is by email. I am also on GitHub.
       </p>
 
-      <a class="button" href="https://corn-yield-dashboard.streamlit.app" target="_blank">
-        Open Interactive Dashboard
-      </a>
-    </section>
-
-    <section id="links">
-      <h2>Links</h2>
-
-      <p>
-        <a href="assets/cv.pdf">CV</a>
-      </p>
-
-      <p>
-        <a href="https://github.com/fayexin15">GitHub</a>
-      </p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-
-      <p>
-        Email: fayexin15@gmail.com
-      </p>
+      <div class="link-row">
+        <a href="mailto:fayexin15@gmail.com">fayexin15@gmail.com</a>
+        <a href="https://github.com/fayexin" target="_blank">GitHub</a>
+      </div>
     </section>
   </main>
+
+  <footer>
+    <p>© Faye Xin</p>
+  </footer>
 </body>
 </html>
