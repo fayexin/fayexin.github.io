@@ -149,7 +149,8 @@ p {
 }
 
 .card,
-.feature-card {
+.feature-card,
+.project-item {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 18px;
@@ -158,9 +159,16 @@ p {
 }
 
 .card p,
-.feature-card p {
+.feature-card p,
+.project-item p {
   color: var(--muted);
   margin-bottom: 0;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
 }
 
 .feature-card {
@@ -178,6 +186,12 @@ p {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+}
+
+.paper-meta {
+  color: var(--text);
+  font-weight: 700;
+  margin-top: 10px;
 }
 
 .contact {
@@ -245,8 +259,3 @@ footer {
     flex-direction: column;
   }
 }
-  .paper-meta {
-    color: var(--text);
-    font-weight: 700;
-    margin-top: 10px;
-  }
